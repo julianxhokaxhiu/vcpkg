@@ -1,0 +1,5 @@
+Source: bimg
+Version: 2020-06-26
+Description: Image library
+Homepage: https://github.com/bkaradzic/bimg
+Build-Depends: bx
