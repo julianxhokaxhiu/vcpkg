@@ -1,0 +1,17 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index c9138ca..3d27a59 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -88,8 +88,10 @@ install(TARGETS "${TARGET_StackWalker}"
+     RUNTIME  DESTINATION ${CMAKE_INSTALL_BINDIR}
+     )
+
+-install(FILES "${CMAKE_SOURCE_DIR}/Main/StackWalker/StackWalker.h"
+-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
++if(NOT SKIP_INSTALL_HEADERS)
++    install(FILES "${CMAKE_SOURCE_DIR}/Main/StackWalker/StackWalker.h"
++        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
++endif()
+
+ if (MSVC_VERSION GREATER_EQUAL 1900)
+     set(PDB_StackWalker "${TARGET_StackWalker}.pdb")
