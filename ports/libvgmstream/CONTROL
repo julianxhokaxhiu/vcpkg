@@ -1,0 +1,17 @@
+Source: libvgmstream
+Version: 2020-06-26
+Description: A library for playback of various streamed audio formats used in video games.
+Homepage: https://github.com/losnoco/vgmstream
+Default-Features: ffmpeg
+
+Feature: ffmpeg
+Description: Use ffmpeg to decode audio files
+Build-Depends: ffmpeg[avresample,gpl]
+
+Feature: mpg123
+Description: Use mpg123 to decode MPEG audio files
+Build-Depends: mpg123
+
+Feature: vorbis
+Description: Use libvorbis to decode OGG audio files
+Build-Depends: libvorbis
