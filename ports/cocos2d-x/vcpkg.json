@@ -1,0 +1,33 @@
+{
+  "name": "cocos2d-x",
+  "version": "3.14.1",
+  "description": "Cocos2d-x is a suite of open-source, cross-platform, game-development tools utilized by millions of developers across the globe.",
+  "homepage": "https://github.com/cocos2d/cocos2d-x",
+  "license": "MIT",
+  "supports": "(windows | linux) & !uwp",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    },
+    "bullet3",
+    "chipmunk",
+    "curl",
+    "flatbuffers",
+    "freetype",
+    "glew",
+    "glfw3",
+    "libjpeg-turbo",
+    "libwebp",
+    "libwebsockets",
+    "openal-soft",
+    "recastnavigation",
+    "tiff",
+    "tinyxml2",
+    "xxhash"
+  ]
+}
